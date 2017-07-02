@@ -22,10 +22,11 @@ public class BrowserSetup extends Logger{
 	    public static String durl  = null;
 	    public static String dvideoUrl  = null;
 	    public static String dimageGalleryUrl  = null;
+	    public static String dapiUrl=null;
 	    
-	    @Parameters({ "browser", "runDesc","url" , "videoUrl", "imageGalleryUrl"})
+	    @Parameters({ "browser", "runDesc","url" , "videoUrl", "imageGalleryUrl", "apibaseurl"})
 	    @BeforeSuite
-	    public void setup( String dBrowser, String runDesc, String url, String videoUrl, String imageGalleryUrl)
+	    public void setup( String dBrowser, String runDesc, String url, String videoUrl, String imageGalleryUrl, String apibaseurl)
 	            throws IOException, AWTException {
 
 	        // Loading all paths to the elements from Object Repository property file
@@ -38,7 +39,7 @@ public class BrowserSetup extends Logger{
 	        durl=url;
 	        dvideoUrl= videoUrl;
 	        dimageGalleryUrl= imageGalleryUrl;
-	        
+	        dapiUrl=apibaseurl;
 	        
 	        
 	        //Browser Selection
