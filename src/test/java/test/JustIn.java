@@ -23,7 +23,7 @@ public class JustIn  extends ABCCommon {
 		
 		for(int i=1;i<=articleCount;i++){
 			
-			System.out.println("Checking Title, Timestamp & Text for Article -" + i);
+			System.out.println("Checking Title, Timestamp & Text for Article :" + i);
 			
 			WebElement articleTitle = wbDrv.findElement(By.cssSelector(".article-index>li>h3>a"));
 			Assert.assertEquals(true, articleTitle.isDisplayed());
