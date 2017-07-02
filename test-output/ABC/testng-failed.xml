@@ -11,12 +11,12 @@
   </listeners>
   <test name="sitelaunch(failed)">
     <classes>
-      <class name="test.NewsBanner">
+      <class name="test.JustIn">
         <methods>
-          <include name="NewsBannerVerifiecation"/>
           <include name="setup"/>
+          <include name="LoadJustIn"/>
         </methods>
-      </class> <!-- test.NewsBanner -->
+      </class> <!-- test.JustIn -->
     </classes>
   </test> <!-- sitelaunch(failed) -->
 </suite> <!-- Failed suite [ABC] -->

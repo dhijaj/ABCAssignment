@@ -19,9 +19,25 @@ public class JustIn  extends ABCCommon {
 		
 		int articleCount = articles.size();
 		
-		System.out.println("articleCount" + articleCount);
+		System.out.println("Article Count: " + articleCount);
 		
-		
+		for(int i=1;i<=articleCount;i++){
+			
+			System.out.println("Checking Title, Timestamp & Text for Article -" + i);
+			
+			WebElement articleTitle = wbDrv.findElement(By.cssSelector(".article-index>li>h3>a"));
+			Assert.assertEquals(true, articleTitle.isDisplayed());
+			
+
+			WebElement articleTimeStamp = wbDrv.findElement(By.cssSelector(".noprint"));
+			Assert.assertEquals(true, articleTimeStamp.isDisplayed());
+			
+
+			WebElement articleText = wbDrv.findElement(By.cssSelector(".article-index>li>p"));
+			Assert.assertEquals(true, articleText.isDisplayed());
+			
+			
+		}
 		
 	  }
 }
