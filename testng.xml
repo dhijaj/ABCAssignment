@@ -10,7 +10,7 @@
 	
     <parameter name="browser" value="chrome"/>
     <parameter name="runDesc" value="ABC automation" />
-	<parameter name="typeofenv" value="prod" />
+	<parameter name="url" value="http://www.abc.net.au/news/" />
     
   <test name="Browserlaunch">
       
@@ -24,6 +24,7 @@
       
        <classes>
          <class name="test.NewTest" />
+         <class name="test.NewsBanner" />
       </classes>
      
   </test><!-- Test -->

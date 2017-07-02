@@ -19,18 +19,21 @@ public class BrowserSetup extends Logger{
 	  public static WebDriver wbDrv = null;
 	    public static Properties OR = null;
 	    public static FileInputStream fp = null;
+	    public static String durl  = null;
 	    
-	    @Parameters({ "browser", "runDesc","typeofenv" })
+	    @Parameters({ "browser", "runDesc","url" })
 	    @BeforeSuite
-	    public void setup( String dBrowser, String runDesc, String objFile)
+	    public void setup( String dBrowser, String runDesc, String url)
 	            throws IOException, AWTException {
 
 	        // Loading all paths to the elements from Object Repository property file
 	        OR = new Properties();
 	        fp = new FileInputStream(System.getProperty("user.dir") + "/target/test-classes/UIMaps/web.properties");
 	        OR.load(fp);
-
 	        
+	       
+			System.out.println("Website under test: "+url); 
+	        durl=url;
 	        //Browser Selection
 	        if(dBrowser.equalsIgnoreCase("firefox")) {
 	        	wbDrv = new FirefoxDriver();
@@ -45,7 +48,7 @@ public class BrowserSetup extends Logger{
 	          
 	        wbDrv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	        ATUReports.setWebDriver(wbDrv);
-	        //return wbDrv;
+	       
 	     
 	        //runDesc(runDesc);
 	    }

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="ABC" duration-ms="3097" started-at="2017-07-02T06:32:08Z" finished-at="2017-07-02T06:32:12Z">
+  <suite name="ABC" duration-ms="7368" started-at="2017-07-02T08:48:35Z" finished-at="2017-07-02T08:48:42Z">
     <groups>
     </groups>
-    <test name="Browserlaunch" duration-ms="6" started-at="2017-07-02T06:32:08Z" finished-at="2017-07-02T06:32:08Z">
+    <test name="Browserlaunch" duration-ms="7" started-at="2017-07-02T08:48:35Z" finished-at="2017-07-02T08:48:35Z">
     </test> <!-- Browserlaunch -->
-    <test name="sitelaunch" duration-ms="3049" started-at="2017-07-02T06:32:09Z" finished-at="2017-07-02T06:32:12Z">
+    <test name="sitelaunch" duration-ms="7349" started-at="2017-07-02T08:48:35Z" finished-at="2017-07-02T08:48:42Z">
       <class name="test.NewTest">
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.NewTest@23e028a9]" name="setup" is-config="true" duration-ms="1906" started-at="2017-07-02T16:32:07Z" finished-at="2017-07-02T16:32:08Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.NewTest@3dd4520b]" name="setup" is-config="true" duration-ms="1474" started-at="2017-07-02T18:48:33Z" finished-at="2017-07-02T18:48:35Z">
           <params>
             <param index="0">
               <value>
@@ -23,18 +23,24 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[prod]]>
+                <![CDATA[http://www.abc.net.au/news/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="firstclass()[pri:0, instance:test.NewTest@23e028a9]" name="firstclass" duration-ms="3035" started-at="2017-07-02T16:32:09Z" finished-at="2017-07-02T16:32:12Z">
+        <test-method status="PASS" signature="LaunchSite()[pri:0, instance:test.NewTest@3dd4520b]" name="LaunchSite" duration-ms="7245" started-at="2017-07-02T18:48:35Z" finished-at="2017-07-02T18:48:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstclass -->
+        </test-method> <!-- LaunchSite -->
       </class> <!-- test.NewTest -->
+      <class name="test.NewsBanner">
+        <test-method status="PASS" signature="NewsBannerVerifiecation()[pri:0, instance:test.NewsBanner@5ae63ade]" name="NewsBannerVerifiecation" duration-ms="82" started-at="2017-07-02T18:48:42Z" finished-at="2017-07-02T18:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewsBannerVerifiecation -->
+      </class> <!-- test.NewsBanner -->
     </test> <!-- sitelaunch -->
   </suite> <!-- ABC -->
 </testng-results>
