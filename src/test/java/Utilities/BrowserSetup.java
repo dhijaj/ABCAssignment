@@ -16,14 +16,16 @@ import atu.testng.reports.ATUReports;
 
 public class BrowserSetup extends Logger{
 
-	  public static WebDriver wbDrv = null;
+	    public static WebDriver wbDrv = null;
 	    public static Properties OR = null;
 	    public static FileInputStream fp = null;
 	    public static String durl  = null;
+	    public static String dvideoUrl  = null;
+	    public static String dimageGalleryUrl  = null;
 	    
-	    @Parameters({ "browser", "runDesc","url" })
+	    @Parameters({ "browser", "runDesc","url" , "videoUrl", "imageGalleryUrl"})
 	    @BeforeSuite
-	    public void setup( String dBrowser, String runDesc, String url)
+	    public void setup( String dBrowser, String runDesc, String url, String videoUrl, String imageGalleryUrl)
 	            throws IOException, AWTException {
 
 	        // Loading all paths to the elements from Object Repository property file
@@ -34,6 +36,11 @@ public class BrowserSetup extends Logger{
 	       
 			System.out.println("Website under test: "+url); 
 	        durl=url;
+	        dvideoUrl= videoUrl;
+	        dimageGalleryUrl= imageGalleryUrl;
+	        
+	        
+	        
 	        //Browser Selection
 	        if(dBrowser.equalsIgnoreCase("firefox")) {
 	        	wbDrv = new FirefoxDriver();

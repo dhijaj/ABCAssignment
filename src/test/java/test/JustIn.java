@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import Utilities.ABCCommon;
 
 public class JustIn  extends ABCCommon {
+	
+	
 	@Test
 	  public void LoadJustInAndCheckArticles() {
 		System.out.println("Clicking JustIn");

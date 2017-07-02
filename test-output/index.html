@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,27 @@
                     <div class="method-list-content passed suite-ABC">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.imageGallery" hash-for-method="ImageGalleryTest">ImageGalleryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.NewTest" hash-for-method="LaunchSite">LaunchSite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.JustIn" hash-for-method="LoadJustIn">LoadJustIn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.JustIn" hash-for-method="LoadJustInAndCheckArticles">LoadJustInAndCheckArticles</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.NewsBanner" hash-for-method="NewsBannerVerifiecation">NewsBannerVerifiecation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.NewsBanner" hash-for-method="NewsBannerVerification">NewsBannerVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.VideoTest" hash-for-method="VideoPlayerTest">VideoPlayerTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-ABC -->
@@ -150,9 +160,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="NewsBannerVerifiecation">
-                  </a> <!-- NewsBannerVerifiecation -->
-                  <span class="method-name">NewsBannerVerifiecation</span>
+                  <a name="NewsBannerVerification">
+                  </a> <!-- NewsBannerVerification -->
+                  <span class="method-name">NewsBannerVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ABC-class-passed -->
+          <div class="suite-ABC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.VideoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VideoPlayerTest">
+                  </a> <!-- VideoPlayerTest -->
+                  <span class="method-name">VideoPlayerTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,9 +190,24 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoadJustIn">
-                  </a> <!-- LoadJustIn -->
-                  <span class="method-name">LoadJustIn</span>
+                  <a name="LoadJustInAndCheckArticles">
+                  </a> <!-- LoadJustInAndCheckArticles -->
+                  <span class="method-name">LoadJustInAndCheckArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ABC-class-passed -->
+          <div class="suite-ABC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.imageGallery</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImageGalleryTest">
+                  </a> <!-- ImageGalleryTest -->
+                  <span class="method-name">ImageGalleryTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,6 +222,8 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ABC&quot;&gt;
+  &lt;parameter name=&quot;imageGalleryUrl&quot; value=&quot;http://www.abc.net.au/news/2017-02-10/abc-open-pic-of-the-week/8256256&quot;/&gt;
+  &lt;parameter name=&quot;videoUrl&quot; value=&quot;http://www.abc.net.au/news/2017-02-09/weatherill-promises-to-intervene-dramatically/8254908&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;runDesc&quot; value=&quot;ABC automation&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;http://www.abc.net.au/news/&quot;/&gt;
@@ -200,6 +242,8 @@
       &lt;class name=&quot;test.NewTest&quot;/&gt;
       &lt;class name=&quot;test.NewsBanner&quot;/&gt;
       &lt;class name=&quot;test.JustIn&quot;/&gt;
+      &lt;class name=&quot;test.VideoTest&quot;/&gt;
+      &lt;class name=&quot;test.imageGallery&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- sitelaunch --&gt;
 &lt;/suite&gt; &lt;!-- ABC --&gt;
@@ -216,7 +260,7 @@
                 <span class="test-name">Browserlaunch (1 class)</span>
               </li>
               <li>
-                <span class="test-name">sitelaunch (3 classes)</span>
+                <span class="test-name">sitelaunch (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -242,24 +286,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'LaunchSite')
-data.setCell(0, 2, 'test.NewTest')
-data.setCell(0, 3, 3721);
+data.setCell(0, 1, 'ImageGalleryTest')
+data.setCell(0, 2, 'test.imageGallery')
+data.setCell(0, 3, 10110);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoadJustIn')
-data.setCell(1, 2, 'test.JustIn')
-data.setCell(1, 3, 2809);
+data.setCell(1, 1, 'LaunchSite')
+data.setCell(1, 2, 'test.NewTest')
+data.setCell(1, 3, 6538);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'NewsBannerVerifiecation')
-data.setCell(2, 2, 'test.NewsBanner')
-data.setCell(2, 3, 71);
+data.setCell(2, 1, 'VideoPlayerTest')
+data.setCell(2, 2, 'test.VideoTest')
+data.setCell(2, 3, 5011);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoadJustInAndCheckArticles')
+data.setCell(3, 2, 'test.JustIn')
+data.setCell(3, 3, 2656);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'NewsBannerVerification')
+data.setCell(4, 2, 'test.NewsBanner')
+data.setCell(4, 3, 59);
 window.suiteTableData['ABC']= { tableData: data, tableDiv: 'times-div-ABC'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-ABC">
               </div> <!-- times-div-ABC -->
             </div> <!-- times-div -->
@@ -274,7 +326,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ABC" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -285,7 +337,21 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">test.VideoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">test.JustIn</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.imageGallery</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -301,26 +367,40 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.NewTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setup(chrome, ABC automation, http://www.abc.net.au/news/)</span>
+                <span class="method-name">setup(chrome, ABC automation, http://www.abc.net.au/news/, http://www.abc.net.au/news/2017-02-09/weatheril...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">LaunchSite</span>
-                <span class="method-start">2216 ms</span>
+                <span class="method-start">1961 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.NewsBanner</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">NewsBannerVerifiecation</span>
-                <span class="method-start">5940 ms</span>
+                <span class="method-name">NewsBannerVerification</span>
+                <span class="method-start">8501 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.JustIn</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">LoadJustIn</span>
-                <span class="method-start">6012 ms</span>
+                <span class="method-name">LoadJustInAndCheckArticles</span>
+                <span class="method-start">8562 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VideoTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VideoPlayerTest</span>
+                <span class="method-start">11219 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.imageGallery</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ImageGalleryTest</span>
+                <span class="method-start">16233 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
