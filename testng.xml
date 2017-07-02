@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-  </test> <!-- Test -->
+<suite name="ABC">
+    
+    <listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+	</listeners>
+	
+    <parameter name="browser" value="chrome"/>
+    <parameter name="runDesc" value="ABC automation" />
+	<parameter name="typeofenv" value="prod" />
+    
+  <test name="Browserlaunch">
+      
+       <classes>
+         <class name="Utilities.ABCCommon" />
+      </classes>
+     
+  </test>
+  
+  <test name="sitelaunch">
+      
+       <classes>
+         <class name="test.NewTest" />
+      </classes>
+     
+  </test><!-- Test -->
 </suite> <!-- Suite -->

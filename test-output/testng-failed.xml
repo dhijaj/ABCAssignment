@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ABC]">
+  <parameter name="typeofenv" value="prod"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="runDesc" value="ABC automation"/>
+  <listeners>
+    <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
+    <listener class-name="atu.testng.reports.listeners.ConfigurationListener"/>
+    <listener class-name="atu.testng.reports.listeners.MethodListener"/>
+  </listeners>
+  <test name="sitelaunch(failed)">
     <classes>
       <class name="test.NewTest">
         <methods>
           <include name="firstclass"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- test.NewTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- sitelaunch(failed) -->
+</suite> <!-- Failed suite [ABC] -->
