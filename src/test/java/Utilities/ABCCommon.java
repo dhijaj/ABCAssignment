@@ -70,6 +70,8 @@ public class ABCCommon extends BrowserSetup {
                 return wbDrv.findElement(By.name(value[0]));
             case "XPATH":
                 return wbDrv.findElement(By.xpath(value[0]));
+            case "CSS":
+                return wbDrv.findElement(By.cssSelector(value[0]));
             case "ID":
                 return wbDrv.findElement(By.id(value[0]+":"+value[1]));
             default:

@@ -26,6 +26,7 @@
          <class name="test.NewTest" />
          <class name="test.NewsBanner" />
          <class name="test.JustIn"/>
+         <class name="test.VideoTest"/>
       </classes>
      
   </test><!-- Test -->

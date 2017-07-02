@@ -9,7 +9,7 @@ import Utilities.ABCCommon;
 public class NewsBanner extends ABCCommon{
 
 @Test
-  public void NewsBannerVerifiecation() {
+  public void NewsBannerVerification() {
 	System.out.println("checking News Banner"); 
 	Assert.assertEquals(true, isElementPresent("Header"));
 	Assert.assertEquals(true, isElementPresent("Banner"));
