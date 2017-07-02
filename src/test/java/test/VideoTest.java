@@ -17,10 +17,7 @@ public class VideoTest extends ABCCommon {
 	@Test
 	  public void VideoPlayerTest() throws InterruptedException {
 	
-		System.out.println(dvideoUrl);
 		wbDrv.get(dvideoUrl);
-	
-		
 		WebElement wplayButton = getElement("playButton");
 		Assert.assertEquals(true, wplayButton.isDisplayed());
 		getElement("playButton").click();
@@ -31,8 +28,5 @@ public class VideoTest extends ABCCommon {
 		Assert.assertEquals(true, wpauseButton.isDisplayed());
 		getElement("pauseButton").click();
 	
-		
-		
-		
 	}
 }
