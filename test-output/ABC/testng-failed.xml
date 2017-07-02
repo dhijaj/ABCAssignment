@@ -5,6 +5,7 @@
   <parameter name="videoUrl" value="http://www.abc.net.au/news/2017-02-09/weatherill-promises-to-intervene-dramatically/8254908"/>
   <parameter name="browser" value="chrome"/>
   <parameter name="runDesc" value="ABC automation"/>
+  <parameter name="apibaseurl" value="program.abcradio.net.au/api/v1/programs/"/>
   <parameter name="url" value="http://www.abc.net.au/news/"/>
   <listeners>
     <listener class-name="atu.testng.reports.listeners.ATUReportsListener"/>
@@ -13,12 +14,12 @@
   </listeners>
   <test name="sitelaunch(failed)">
     <classes>
-      <class name="test.imageGallery">
+      <class name="test.ApiTest">
         <methods>
-          <include name="ImageGalleryTest"/>
           <include name="setup"/>
+          <include name="API_Get1" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- test.imageGallery -->
+      </class> <!-- test.ApiTest -->
     </classes>
   </test> <!-- sitelaunch(failed) -->
 </suite> <!-- Failed suite [ABC] -->
