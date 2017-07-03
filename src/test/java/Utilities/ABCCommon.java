@@ -61,7 +61,7 @@ public class ABCCommon extends BrowserSetup {
         try {
             value = OR.getProperty(elementKey).split(":");
         } catch (NullPointerException e) {
-            System.out.println(elementKey + "declaration is not found in the OR.properties file");
+            System.out.println(elementKey + "declaration is not found in the properties file");
             return null;
         }
         try {
@@ -89,7 +89,7 @@ public class ABCCommon extends BrowserSetup {
         try {
             value = OR.getProperty(elementKey).split(":");
         } catch (NullPointerException e) {
-            System.out.println(elementKey + "declaration is not found in the OR.properties file");
+            System.out.println(elementKey + "declaration is not found in the properties file");
             return false;
         }
 
@@ -118,7 +118,7 @@ public class ABCCommon extends BrowserSetup {
         try {
             value = OR.getProperty(name).split(":");
         } catch (NullPointerException e) {
-            System.out.println(name + "declaration is not found in the OR.properties file");
+            System.out.println(name + "declaration is not found in the properties file");
             return null;
         }
         try {
