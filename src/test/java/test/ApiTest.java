@@ -33,6 +33,7 @@ import static com.jayway.restassured.RestAssured.*;
 		}
 
 		@Test(enabled =false)
+
 		//@Test(priority=2, dataProvider = "data-provider2")
 		public void API_Get1(String environment){
 			String tapiUrl1 = "http://"+environment+dapiUrl+"ppJj0E8g2R.json";
@@ -49,7 +50,7 @@ import static com.jayway.restassured.RestAssured.*;
 		
 		
 		
-		@Test(priority=3, dataProvider = "data-provider")
+		@Test(priority=2, dataProvider = "data-provider")
 		public void API_Get3(String programName){
 			String tapiUrl1 = "http://"+dapiUrl+programName;
 			System.out.println("apiUrl : " + tapiUrl1);
