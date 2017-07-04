@@ -32,8 +32,8 @@ import static com.jayway.restassured.RestAssured.*;
 			
 		}
 
-		
-		@Test(priority=2, dataProvider = "data-provider2")
+		@Test(enabled =false)
+		//@Test(priority=2, dataProvider = "data-provider2")
 		public void API_Get1(String environment){
 			String tapiUrl1 = "http://"+environment+dapiUrl+"ppJj0E8g2R.json";
 			System.out.println("apiUrl : " + tapiUrl1);

@@ -23,10 +23,12 @@ public class BrowserSetup extends Logger{
 	    public static String dvideoUrl  = null;
 	    public static String dimageGalleryUrl  = null;
 	    public static String dapiUrl=null;
-	    
-	    @Parameters({ "browser", "runDesc","url" , "videoUrl", "imageGalleryUrl", "apibaseurl"})
+	    public static String dABCRadio =null;
+	    public static String dSocialUrl =null;
+
+	    @Parameters({ "browser", "runDesc","url" , "videoUrl", "imageGalleryUrl", "apibaseurl","abcRadiourl", "SocialUrl"})
 	    @BeforeSuite
-	    public void setup( String dBrowser, String runDesc, String url, String videoUrl, String imageGalleryUrl, String apibaseurl)
+	    public void setup( String dBrowser, String runDesc, String url, String videoUrl, String imageGalleryUrl, String apibaseurl, String abcRadiourl, String SocialUrl)
 	            throws IOException, AWTException {
 
 	        // Loading all paths to the elements from Object Repository property file
@@ -40,7 +42,8 @@ public class BrowserSetup extends Logger{
 	        dvideoUrl= videoUrl;
 	        dimageGalleryUrl= imageGalleryUrl;
 	        dapiUrl=apibaseurl;
-	        
+	        dABCRadio = abcRadiourl;
+	        dSocialUrl=SocialUrl;
 	        
 	        //Browser Selection
 	        if(dBrowser.equalsIgnoreCase("firefox")) {
@@ -65,5 +68,6 @@ public class BrowserSetup extends Logger{
 	   // @AfterSuite
 	    public static void tearDown() {
 	       wbDrv.quit();
+	       wbDrv.close();
 	    }
 }

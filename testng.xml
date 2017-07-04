@@ -14,25 +14,43 @@
 	<parameter name="videoUrl" value="http://www.abc.net.au/news/2017-02-09/weatherill-promises-to-intervene-dramatically/8254908"/>
 	<parameter name="imageGalleryUrl" value="http://www.abc.net.au/news/2017-02-10/abc-open-pic-of-the-week/8256256"/>
     <parameter name="apibaseurl" value="program.abcradio.net.au/api/v1/programs/"/>
+    <parameter name="abcRadiourl" value="http://www.abc.net.au/radionational/"/>
+    <parameter name="SocialUrl" value="http://www.abc.net.au/radionational/programs/bigideas/a-fortunate-universe/8076406"/>
+    
     
   <test name="Browserlaunch">
-      
-       <classes>
+      <classes>
          <class name="Utilities.ABCCommon" />
       </classes>
-     
   </test>
   
-  <test name="sitelaunch">
-      
+  
+  <test name="Section A">
        <classes>
          <class name="test.NewTest" />
          <class name="test.NewsBanner" />
          <class name="test.JustIn"/>
          <class name="test.VideoTest"/>
          <class name="test.imageGallery"/>
-         <class name="test.ApiTest"/>
+       </classes>
+    </test>
+    
+   <test name="Section B">
+       <classes>
+        <class name="test.ABCRadios" />
+		<class name="test.lastProgram" />
+		<class name="test.SearchRadioProgram" />
       </classes>
-     
-  </test><!-- Test -->
+  </test>
+  
+  
+   <test name="Section C">
+       <classes>
+         <class name="test.ApiTest" />
+      </classes>
+  </test>
+  
+  
+  
+  
 </suite> <!-- Suite -->

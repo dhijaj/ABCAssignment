@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-ABC">
-              <span class="suite-name border-failed">ABC</span>
+              <span class="suite-name border-passed">ABC</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-ABC">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-ABC" class="hide-methods failed suite-ABC"> (hide)</a> <!-- hide-methods failed suite-ABC -->
-                      <a href="#" panel-name="suite-ABC" class="show-methods failed suite-ABC"> (show)</a> <!-- show-methods failed suite-ABC -->
-                    </span>
-                    <div class="method-list-content failed suite-ABC">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ApiTest" hash-for-method="API_Get1(test-)">API_Get1(test-)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ApiTest" hash-for-method="API_Get1(stage-)">API_Get1(stage-)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-ABC -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,12 +107,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ApiTest" hash-for-method="API_Get3(ppxa2Amj2b.json)">API_Get3(ppxa2Amj2b.json)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ApiTest" hash-for-method="API_Get3(ppJj0E8g2R.json)">API_Get3(ppJj0E8g2R.json)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ApiTest" hash-for-method="API_Get3(ppJj0E8g2R.json)">API_Get3(ppJj0E8g2R.json)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ApiTest" hash-for-method="API_Get3(ppxa2Amj2b.json)">API_Get3(ppxa2Amj2b.json)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,6 +123,21 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.NewTest" hash-for-method="LaunchSite">LaunchSite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.ABCRadios" hash-for-method="LoadABRadio">LoadABRadio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.lastProgram" hash-for-method="LoadABRadio">LoadABRadio</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ABC" title="test.SearchRadioProgram" hash-for-method="LoadABRadio1">LoadABRadio1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -171,154 +167,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ABC" class="panel ABC">
-          <div class="suite-ABC-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.ApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="API_Get1(test-)">
-                  </a> <!-- API_Get1(test-) -->
-                  <span class="method-name">API_Get1</span>
-                  <span class="parameters">(test-)</span>
-                  <div class="stack-trace">java.net.UnknownHostException: test-program.abcradio.net.au: unknown error
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
-	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
-	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
-	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
-	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at test.ApiTest.API_Get1(ApiTest.java:43)
-... Removed 40 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="API_Get1(stage-)">
-                  </a> <!-- API_Get1(stage-) -->
-                  <span class="method-name">API_Get1</span>
-                  <span class="parameters">(stage-)</span>
-                  <div class="stack-trace">java.net.UnknownHostException: stage-program.abcradio.net.au: unknown error
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
-	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
-	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:1974)
-	at com.jayway.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:492)
-	at com.jayway.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:441)
-	at com.jayway.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1396)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1178)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at com.jayway.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
-	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.jayway.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at com.jayway.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at com.jayway.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at com.jayway.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:73)
-	at com.jayway.restassured.filter.FilterContext$next.call(Unknown Source)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1596)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:160)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at test.ApiTest.API_Get1(ApiTest.java:43)
-... Removed 40 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ABC-class-failed -->
           <div class="suite-ABC-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -337,30 +185,29 @@
           <div class="suite-ABC-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.ApiTest</span>
+              <span class="class-name">test.ABCRadios</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="API_Get">
-                  </a> <!-- API_Get -->
-                  <span class="method-name">API_Get</span>
+                  <a name="LoadABRadio">
+                  </a> <!-- LoadABRadio -->
+                  <span class="method-name">LoadABRadio</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ABC-class-passed -->
+          <div class="suite-ABC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.SearchRadioProgram</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="API_Get3(ppxa2Amj2b.json)">
-                  </a> <!-- API_Get3(ppxa2Amj2b.json) -->
-                  <span class="method-name">API_Get3</span>
-                  <span class="parameters">(ppxa2Amj2b.json)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="API_Get3(ppJj0E8g2R.json)">
-                  </a> <!-- API_Get3(ppJj0E8g2R.json) -->
-                  <span class="method-name">API_Get3</span>
-                  <span class="parameters">(ppJj0E8g2R.json)</span>
+                  <a name="LoadABRadio1">
+                  </a> <!-- LoadABRadio1 -->
+                  <span class="method-name">LoadABRadio1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -383,14 +230,30 @@
           <div class="suite-ABC-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.JustIn</span>
+              <span class="class-name">test.ApiTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoadJustInAndCheckArticles">
-                  </a> <!-- LoadJustInAndCheckArticles -->
-                  <span class="method-name">LoadJustInAndCheckArticles</span>
+                  <a name="API_Get">
+                  </a> <!-- API_Get -->
+                  <span class="method-name">API_Get</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="API_Get3(ppJj0E8g2R.json)">
+                  </a> <!-- API_Get3(ppJj0E8g2R.json) -->
+                  <span class="method-name">API_Get3</span>
+                  <span class="parameters">(ppJj0E8g2R.json)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="API_Get3(ppxa2Amj2b.json)">
+                  </a> <!-- API_Get3(ppxa2Amj2b.json) -->
+                  <span class="method-name">API_Get3</span>
+                  <span class="parameters">(ppxa2Amj2b.json)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -406,6 +269,36 @@
                   <a name="VideoPlayerTest">
                   </a> <!-- VideoPlayerTest -->
                   <span class="method-name">VideoPlayerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ABC-class-passed -->
+          <div class="suite-ABC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.JustIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoadJustInAndCheckArticles">
+                  </a> <!-- LoadJustInAndCheckArticles -->
+                  <span class="method-name">LoadJustInAndCheckArticles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ABC-class-passed -->
+          <div class="suite-ABC-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.lastProgram</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoadABRadio">
+                  </a> <!-- LoadABRadio -->
+                  <span class="method-name">LoadABRadio</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -436,11 +329,13 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ABC&quot;&gt;
   &lt;parameter name=&quot;imageGalleryUrl&quot; value=&quot;http://www.abc.net.au/news/2017-02-10/abc-open-pic-of-the-week/8256256&quot;/&gt;
+  &lt;parameter name=&quot;SocialUrl&quot; value=&quot;http://www.abc.net.au/radionational/programs/bigideas/a-fortunate-universe/8076406&quot;/&gt;
   &lt;parameter name=&quot;videoUrl&quot; value=&quot;http://www.abc.net.au/news/2017-02-09/weatherill-promises-to-intervene-dramatically/8254908&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;runDesc&quot; value=&quot;ABC automation&quot;/&gt;
   &lt;parameter name=&quot;apibaseurl&quot; value=&quot;program.abcradio.net.au/api/v1/programs/&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;http://www.abc.net.au/news/&quot;/&gt;
+  &lt;parameter name=&quot;abcRadiourl&quot; value=&quot;http://www.abc.net.au/radionational/&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;atu.testng.reports.listeners.ATUReportsListener&quot;/&gt;
     &lt;listener class-name=&quot;atu.testng.reports.listeners.ConfigurationListener&quot;/&gt;
@@ -451,16 +346,27 @@
       &lt;class name=&quot;Utilities.ABCCommon&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Browserlaunch --&gt;
-  &lt;test name=&quot;sitelaunch&quot;&gt;
+  &lt;test name=&quot;Section A&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.NewTest&quot;/&gt;
       &lt;class name=&quot;test.NewsBanner&quot;/&gt;
       &lt;class name=&quot;test.JustIn&quot;/&gt;
       &lt;class name=&quot;test.VideoTest&quot;/&gt;
       &lt;class name=&quot;test.imageGallery&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Section A --&gt;
+  &lt;test name=&quot;Section B&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.ABCRadios&quot;/&gt;
+      &lt;class name=&quot;test.lastProgram&quot;/&gt;
+      &lt;class name=&quot;test.SearchRadioProgram&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Section B --&gt;
+  &lt;test name=&quot;Section C&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;test.ApiTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- sitelaunch --&gt;
+  &lt;/test&gt; &lt;!-- Section C --&gt;
 &lt;/suite&gt; &lt;!-- ABC --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -475,7 +381,13 @@
                 <span class="test-name">Browserlaunch (1 class)</span>
               </li>
               <li>
-                <span class="test-name">sitelaunch (6 classes)</span>
+                <span class="test-name">Section A (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Section B (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Section C (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -501,52 +413,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ImageGalleryTest')
-data.setCell(0, 2, 'test.imageGallery')
-data.setCell(0, 3, 10416);
+data.setCell(0, 1, 'LoadABRadio')
+data.setCell(0, 2, 'test.lastProgram')
+data.setCell(0, 3, 54132);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoadJustInAndCheckArticles')
-data.setCell(1, 2, 'test.JustIn')
-data.setCell(1, 3, 10363);
+data.setCell(1, 1, 'LoadABRadio')
+data.setCell(1, 2, 'test.ABCRadios')
+data.setCell(1, 3, 11224);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LaunchSite')
-data.setCell(2, 2, 'test.NewTest')
-data.setCell(2, 3, 3205);
+data.setCell(2, 1, 'LoadABRadio1')
+data.setCell(2, 2, 'test.SearchRadioProgram')
+data.setCell(2, 3, 10750);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VideoPlayerTest')
-data.setCell(3, 2, 'test.VideoTest')
-data.setCell(3, 3, 2480);
+data.setCell(3, 1, 'LaunchSite')
+data.setCell(3, 2, 'test.NewTest')
+data.setCell(3, 3, 7721);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'API_Get')
-data.setCell(4, 2, 'test.ApiTest')
-data.setCell(4, 3, 2172);
+data.setCell(4, 1, 'ImageGalleryTest')
+data.setCell(4, 2, 'test.imageGallery')
+data.setCell(4, 3, 7670);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'API_Get3')
-data.setCell(5, 2, 'test.ApiTest')
-data.setCell(5, 3, 216);
+data.setCell(5, 1, 'LoadJustInAndCheckArticles')
+data.setCell(5, 2, 'test.JustIn')
+data.setCell(5, 3, 4512);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'API_Get1')
-data.setCell(6, 2, 'test.ApiTest')
-data.setCell(6, 3, 210);
+data.setCell(6, 1, 'VideoPlayerTest')
+data.setCell(6, 2, 'test.VideoTest')
+data.setCell(6, 3, 3379);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'API_Get3')
+data.setCell(7, 1, 'API_Get')
 data.setCell(7, 2, 'test.ApiTest')
-data.setCell(7, 3, 87);
+data.setCell(7, 3, 2155);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'NewsBannerVerification')
-data.setCell(8, 2, 'test.NewsBanner')
-data.setCell(8, 3, 79);
+data.setCell(8, 1, 'API_Get3')
+data.setCell(8, 2, 'test.ApiTest')
+data.setCell(8, 3, 152);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'API_Get1')
+data.setCell(9, 1, 'API_Get3')
 data.setCell(9, 2, 'test.ApiTest')
-data.setCell(9, 3, 69);
+data.setCell(9, 3, 76);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'NewsBannerVerification')
+data.setCell(10, 2, 'test.NewsBanner')
+data.setCell(10, 3, 62);
 window.suiteTableData['ABC']= { tableData: data, tableDiv: 'times-div-ABC'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-ABC">
               </div> <!-- times-div-ABC -->
             </div> <!-- times-div -->
@@ -561,11 +477,11 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ABC" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">test.ApiTest</span>
+              <span class="ignored-class-name">test.SearchRadioProgram</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -579,6 +495,13 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">test.ApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">API_Get1</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">test.JustIn</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
@@ -587,6 +510,13 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">test.VideoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.lastProgram</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
@@ -607,69 +537,81 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.NewTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.ApiTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setup(chrome, ABC automation, http://www.abc.net.au/news/, http://www.abc.net.au/news/2017-02-09/weatheril...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.NewTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LaunchSite</span>
-                <span class="method-start">2134 ms</span>
+                <span class="method-start">2357 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.NewsBanner</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">NewsBannerVerification</span>
-                <span class="method-start">5342 ms</span>
+                <span class="method-start">10080 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.JustIn</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LoadJustInAndCheckArticles</span>
-                <span class="method-start">5423 ms</span>
+                <span class="method-start">10144 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VideoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">VideoPlayerTest</span>
-                <span class="method-start">15788 ms</span>
+                <span class="method-start">14657 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.imageGallery</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">ImageGalleryTest</span>
-                <span class="method-start">18269 ms</span>
+                <span class="method-start">18039 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.ABCRadios</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoadABRadio</span>
+                <span class="method-start">25719 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.lastProgram</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoadABRadio</span>
+                <span class="method-start">36945 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.SearchRadioProgram</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LoadABRadio1</span>
+                <span class="method-start">91078 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.ApiTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">API_Get</span>
-                <span class="method-start">28686 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">API_Get1(test-)</span>
-                <span class="method-start">30865 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">API_Get1(stage-)</span>
-                <span class="method-start">30939 ms</span>
+                <span class="method-start">101835 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">API_Get3(ppJj0E8g2R.json)</span>
-                <span class="method-start">31155 ms</span>
+                <span class="method-start">103997 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">API_Get3(ppxa2Amj2b.json)</span>
-                <span class="method-start">31244 ms</span>
+                <span class="method-start">104074 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

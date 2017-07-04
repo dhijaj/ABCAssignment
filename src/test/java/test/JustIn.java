@@ -19,12 +19,8 @@ public class JustIn  extends ABCCommon {
 		getElement("Justin").click();
 
 		List<WebElement> articles = wbDrv.findElements(By.cssSelector(".article-index>li"));
-
-		
 		int articleCount = articles.size();
-		
 		System.out.println("Article Count: " + articleCount);
-		
 		for(int i=1;i<=articleCount;i++){
 						
 			//System.out.println("Checking Title, Timestamp & Text for Article :" + i);
